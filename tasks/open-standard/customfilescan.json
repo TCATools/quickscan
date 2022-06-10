@@ -1,0 +1,100 @@
+{
+  "task_name": "customfilescan",
+  "module_name": "codelint",
+  "task_params": {
+    "scan_languages": [
+      "python"
+    ],
+    "pre_cmd": null,
+    "build_cmd": null,
+    "envs": " \n",
+    "scm_last_revision": null,
+    "incr_scan": false,
+    "tag": "Codedog_Linux",
+    "rules": [
+      "WrongEncoding",
+      "LowCommentRatio",
+      "FilesNotFound",
+      "CopyrightChecker"
+    ],
+    "rule_list": [
+      {
+        "name": "WrongEncoding",
+        "gid": 4009,
+        "pkg_id": 126,
+        "pkg_name": "\u3010\u5168\u8bed\u79cd\u3011\u5f00\u6e90\u5408\u89c4\u68c0\u67e5",
+        "pkg_type": 2,
+        "pkgmap_id": 2467,
+        "tool_name": "customfilescan",
+        "category": 7,
+        "display_name": "WrongEncoding",
+        "rule_title": "\u6587\u4ef6\u7f16\u7801\u683c\u5f0f\u4e0d\u7b26\u5408\u89c4\u8303",
+        "severity": 2,
+        "custom": true,
+        "params": ""
+      },
+      {
+        "name": "LowCommentRatio",
+        "gid": 4008,
+        "pkg_id": 126,
+        "pkg_name": "\u3010\u5168\u8bed\u79cd\u3011\u5f00\u6e90\u5408\u89c4\u68c0\u67e5",
+        "pkg_type": 2,
+        "pkgmap_id": 2468,
+        "tool_name": "customfilescan",
+        "category": 7,
+        "display_name": "LowCommentRatio",
+        "rule_title": "\u68c0\u67e5\u4ee3\u7801\u6587\u4ef6\u6ce8\u91ca\u884c\u6570\u5360\u6bd4\uff0c\u4e0d\u80fd\u4f4e\u4e8e\u9608\u503c\uff0c\u9ed8\u8ba4\u9608\u503c\u4e3a10%",
+        "severity": 3,
+        "custom": true,
+        "params": ""
+      },
+      {
+        "name": "FilesNotFound",
+        "gid": 4006,
+        "pkg_id": 126,
+        "pkg_name": "\u3010\u5168\u8bed\u79cd\u3011\u5f00\u6e90\u5408\u89c4\u68c0\u67e5",
+        "pkg_type": 2,
+        "pkgmap_id": 2469,
+        "tool_name": "customfilescan",
+        "category": 7,
+        "display_name": "FilesNotFound",
+        "rule_title": "\u68c0\u67e5\u9879\u76ee\u4e2d\u662f\u5426\u5305\u542b\u5fc5\u5907\u7684\u6587\u4ef6",
+        "severity": 3,
+        "custom": true,
+        "params": ""
+      },
+      {
+        "name": "CopyrightChecker",
+        "gid": 4004,
+        "pkg_id": 126,
+        "pkg_name": "\u3010\u5168\u8bed\u79cd\u3011\u5f00\u6e90\u5408\u89c4\u68c0\u67e5",
+        "pkg_type": 2,
+        "pkgmap_id": 2472,
+        "tool_name": "customfilescan",
+        "category": 7,
+        "display_name": "CopyrightChecker",
+        "rule_title": "\u68c0\u67e5\u5f00\u6e90\u9879\u76ee\u4e2d\u4ee3\u7801\u6587\u4ef6\u5934\u90e8\u662f\u5426\u6709Copyright\u4fe1\u606f",
+        "severity": 3,
+        "custom": true,
+        "params": ""
+      }
+    ],
+    "checktool": {
+      "scm_url": null,
+      "run_cmd": null,
+      "envs": null,
+      "display_name": "CustomFileScan",
+      "virtual_name": "20",
+      "show_display_name": true,
+      "build_flag": false,
+      "tool_key": "default",
+      "tool_schemes": []
+    }
+  },
+  "tag": "Codedog_Linux",
+  "task_version": "2.0",
+  "processes": [
+    "analyze",
+    "datahandle"
+  ]
+}
